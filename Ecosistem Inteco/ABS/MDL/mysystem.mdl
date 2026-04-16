@@ -1,0 +1,3439 @@
+Model {
+  Name			  "MySystem"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Jul 10 10:13:22 1998"
+  Creator		  "jims"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrator"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Jul 08 07:27:55 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:152>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "RTW"
+  StartTime		  "0.0"
+  StopTime		  "999999"
+  SolverMode		  "SingleTasking"
+  Solver		  "ode5"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.01"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "[]"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "5000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "none"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "external"
+  RTWSystemTargetFile	  "rtwin.tlc"
+  RTWOptions		  " -aCCOptimize=1 -aEnforceIntegerDowncast=1 -aExtMod"
+"e=1 -aFoldNonRolledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -a"
+"GenerateReport=0 -aIncDataTypeInIds=0 -aIncHierarchyInIds=0 -aInlineInvariant"
+"Signals=0 -aInlineParameters=0 -aInlinedPrmAccess=\"Literals\" -aLocalBlockOu"
+"tputs=1 -aMaxRTWIdLen=31 -aPrefixModelToSubsysFcnNames=1 -aRTWVerbose=1 -aReb"
+"uildAll=0 -aRollThreshold=5 -aShowEliminatedStatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "abs_win_vc.tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "rtwinext"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  6000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "MySystem"
+    Location		    [134, 95, 926, 590]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "ABS"
+      Ports		      [2, 5]
+      Position		      [205, 58, 375, 222]
+      BackgroundColor	      "yellow"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "Base Address|Sample Time"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "BaseAddress=@1;T0=@2;"
+      MaskDisplay	      " plot([-0.2 -0.2], [-0.2 -0.2], [1.2 1.2], [1.2"
+" 1.2], [0.9 0.9], [0.6 0.9], [0.9 0.9], [0.3 0.5], [0.85 0.85 0.95 0.95], [0."
+"7 0.5 0.5 0.7], [0.75 0.75], [0.8 0.9], [0.75 0.75], [0.3 0.4], [0.75 0.775],"
+" [0.4 0.425], [0.775 0.725 0.775], [0.425 0.475 0.525], [0.775 0.725 0.775], "
+"[0.525 0.575 0.625], [0.775 0.725 0.775], [0.625 0.675 0.725], [0.775 0.725 0"
+".75], [0.725 0.775 0.8], [0.65 0.95], [0.9 0.9], [0.65 0.7], [0.9 1], [0.7 0."
+"75], [0.9 1], [0.75 0.8], [0.9 1], [0.8 0.85], [0.9 1], [0.85 0.9], [0.9 1], "
+"[0.9 0.95], [0.9 1], [0.95 1], [0.9 1], 0.4+0.3*sin([0 0.20 0.41 0.62 0.83 1."
+"04 1.25 1.46 1.67 1.88 2.09 2.30 2.51 2.72 2.93 3.14 3.35 3.56 3.76 3.97 4.18"
+" 4.39 4.60 4.81 5.02 5.23 5.44 5.65 5.86 6.07 6.28]), 0.3+0.3*cos([0 0.20 0.4"
+"1 0.62 0.83 1.04 1.25 1.46 1.67 1.88 2.09 2.30 2.51 2.72 2.93 3.14 3.35 3.56 "
+"3.76 3.97 4.18 4.39 4.60 4.81 5.02 5.23 5.44 5.65 5.86 6.07 6.28]), (1-0.005)"
+"+0.005*sin([0 0.20 0.41 0.62 0.83 1.04 1.25 1.46 1.67 1.88 2.09 2.30 2.51 2.7"
+"2 2.93 3.14 3.35 3.56 3.76 3.97 4.18 4.39 4.60 4.81 5.02 5.23 5.44 5.65 5.86 "
+"6.07 6.28]), 0.3+0.005*cos([0 0.20 0.41 0.62 0.83 1.04 1.25 1.46 1.67 1.88 2."
+"09 2.30 2.51 2.72 2.93 3.14 3.35 3.56 3.76 3.97 4.18 4.39 4.60 4.81 5.02 5.23"
+" 5.44 5.65 5.86 6.07 6.28]), 0.4+0.005*sin([0 0.20 0.41 0.62 0.83 1.04 1.25 1"
+".46 1.67 1.88 2.09 2.30 2.51 2.72 2.93 3.14 3.35 3.56 3.76 3.97 4.18 4.39 4.6"
+"0 4.81 5.02 5.23 5.44 5.65 5.86 6.07 6.28]), 0.3+0.005*cos([0 0.20 0.41 0.62 "
+"0.83 1.04 1.25 1.46 1.67 1.88 2.09 2.30 2.51 2.72 2.93 3.14 3.35 3.56 3.76 3."
+"97 4.18 4.39 4.60 4.81 5.02 5.23 5.44 5.65 5.86 6.07 6.28]), [0.4 1], [0.3 0."
+"3], [0 1], [0 0] )\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "mex_baseaddress(-1,-1)|0.01"
+      MaskVariableAliases     ","
+      Port {
+	PortNumber		1
+	Name			"Car"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		2
+	Name			"Wheel"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		3
+	Name			"VCar"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		4
+	Name			"VWheel"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		5
+	Name			"Slip"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      System {
+	Name			"ABS"
+	Location		[20, 76, 1011, 719]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Drive"
+	  Position		  [55, 68, 85, 82]
+	  BackgroundColor	  "red"
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Brake"
+	  Position		  [55, 158, 85, 172]
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Car Velocity"
+	  Ports			  [1]
+	  Position		  [725, 268, 810, 292]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  Position		  [265, 135, 285, 155]
+	  BackgroundColor	  "green"
+	  DisplayTime		  off
+	  Decimation		  "10"
+	}
+	Block {
+	  BlockType		  DeadZone
+	  Name			  "Dead Zone"
+	  Position		  [750, 100, 770, 120]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  LowerValue		  "-0.05"
+	  UpperValue		  "0.05"
+	  SaturateOnIntegerOverflow on
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  DeadZone
+	  Name			  "Dead Zone1"
+	  Position		  [740, 185, 760, 205]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  LowerValue		  "-0.05"
+	  UpperValue		  "0.05"
+	  SaturateOnIntegerOverflow on
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 2]
+	  Position		  [610, 281, 615, 374]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [145, 235, 150, 330]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Outputs		  "2"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux2"
+	  Ports			  [1, 3]
+	  Position		  [145, 338, 150, 462]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux3"
+	  Ports			  [1, 3]
+	  Position		  [145, 467, 150, 593]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux4"
+	  Ports			  [1, 3]
+	  Position		  [525, 406, 530, 544]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Outputs		  "[1 1 4]"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux5"
+	  Ports			  [1, 4]
+	  Position		  [690, 428, 695, 607]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Outputs		  "4"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Disp. Slip"
+	  Ports			  [1]
+	  Position		  [790, 198, 880, 222]
+	  Orientation		  "left"
+	  BackgroundColor	  "green"
+	  Format		  "bank"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn"
+	  Position		  [790, 125, 850, 145]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Expr			  "u+0.01"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Max Scale Temperature"
+	  Position		  [210, 515, 240, 545]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSTemperatureScale"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Max Temperature [C]"
+	  Ports			  [1]
+	  Position		  [295, 519, 380, 541]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Maximum Velocity Flag"
+	  Ports			  [1]
+	  Position		  [295, 294, 380, 316]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Maximum Velocity [RPM]"
+	  Ports			  [1]
+	  Position		  [295, 248, 380, 272]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Min Power Supply [V]"
+	  Ports			  [1]
+	  Position		  [295, 389, 380, 411]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Min Scale Power Supply"
+	  Ports			  [1, 1]
+	  Position		  [190, 387, 245, 413]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Min Scale Power Supply"
+	    Location		    [159, 369, 617, 604]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Bit"
+	      Position		      [40, 108, 70, 122]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [135, 130, 165, 160]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      Position		      [135, 70, 285, 100]
+	      ShowName		      off
+	      Expr		      "ABSPowerScale/(u+0.001)"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [315, 67, 345, 163]
+	      ShowName		      off
+	      Threshold		      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Power"
+	      Position		      [370, 108, 400, 122]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Bit"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		DstBlock		"Switch"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Fcn"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "Power"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pos-2-Vel\nCar"
+	  Ports			  [1, 1]
+	  Position		  [660, 94, 715, 126]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Pos-2-Vel\nCar"
+	    Location		    [322, 349, 861, 569]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Pos"
+	      Position		      [50, 43, 80, 57]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock"
+	      Position		      [335, 85, 355, 105]
+	      ShowName		      off
+	      DisplayTime	      off
+	      Decimation	      "10"
+	    }
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock1"
+	      Position		      [95, 115, 115, 135]
+	      ShowName		      off
+	      DisplayTime	      off
+	      Decimation	      "10"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory"
+	      Position		      [150, 65, 180, 95]
+	      ShowName		      off
+	      X0		      "0"
+	      InheritSampleTime	      on
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory1"
+	      Position		      [150, 110, 180, 140]
+	      ShowName		      off
+	      X0		      "0"
+	      InheritSampleTime	      on
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [280, 40, 310, 75]
+	      ShowName		      off
+	      Inputs		      "*/"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [195, 40, 215, 60]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      Ports		      [2, 1]
+	      Position		      [195, 115, 215, 135]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|-+"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [375, 40, 400, 150]
+	      ShowName		      off
+	      Threshold		      "0.001"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Zero"
+	      Position		      [330, 119, 350, 141]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "[m/s]"
+	      Position		      [430, 85, 450, 105]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Pos"
+	      SrcPort		      1
+	      Points		      [20, 0; 15, 0]
+	      Branch {
+		Points			[0, 30]
+		DstBlock		"Memory"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Sum"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Memory"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Clock"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "[m/s]"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Zero"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Clock1"
+	      SrcPort		      1
+	      Points		      [0, 0; 10, 0]
+	      Branch {
+		DstBlock		"Memory1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 35; 75, 0]
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Memory1"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -60]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pos-2-Vel\nWheel"
+	  Ports			  [1, 1]
+	  Position		  [660, 179, 715, 211]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Pos-2-Vel\nWheel"
+	    Location		    [322, 349, 861, 569]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Pos"
+	      Position		      [50, 43, 80, 57]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock"
+	      Position		      [335, 85, 355, 105]
+	      ShowName		      off
+	      DisplayTime	      off
+	      Decimation	      "10"
+	    }
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock1"
+	      Position		      [95, 115, 115, 135]
+	      ShowName		      off
+	      DisplayTime	      off
+	      Decimation	      "10"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory"
+	      Position		      [150, 65, 180, 95]
+	      ShowName		      off
+	      X0		      "0"
+	      InheritSampleTime	      on
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory1"
+	      Position		      [150, 110, 180, 140]
+	      ShowName		      off
+	      X0		      "0"
+	      InheritSampleTime	      on
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [280, 40, 310, 75]
+	      ShowName		      off
+	      Inputs		      "*/"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [195, 40, 215, 60]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      Ports		      [2, 1]
+	      Position		      [195, 115, 215, 135]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|-+"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [375, 40, 400, 150]
+	      ShowName		      off
+	      Threshold		      "0.001"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Zero"
+	      Position		      [330, 119, 350, 141]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "[m/s]"
+	      Position		      [430, 85, 450, 105]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -60]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Memory1"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Clock1"
+	      SrcPort		      1
+	      Points		      [0, 0; 10, 0]
+	      Branch {
+		Points			[0, 35; 75, 0]
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"Memory1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Zero"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "[m/s]"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Clock"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Memory"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Pos"
+	      SrcPort		      1
+	      Points		      [20, 0; 15, 0]
+	      Branch {
+		DstBlock		"Sum"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 30]
+		DstBlock		"Memory"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Power Supply Flag"
+	  Ports			  [1]
+	  Position		  [295, 429, 380, 451]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Power Supply [V]"
+	  Ports			  [1]
+	  Position		  [295, 348, 380, 372]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [865, 121, 890, 179]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  Inputs		  "/*"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nEncoder Bump"
+	  Ports			  [1, 1]
+	  Position		  [430, 205, 490, 255]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Channel:|Sample Time (sec):"
+	  MaskStyleString	  "edit,popup(0|1|2|3),edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVariables		  "BaseAddress=@1;ChannelIdx=@2;T0=@3;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|2|T0"
+	  MaskVariableAliases	  ",,"
+	  System {
+	    Name		    "RT-DAC PCI\nEncoder Bump"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Reset"
+	      Position		      [20, 65, 40, 85]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nEncoder"
+	      Ports		      [1, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_encoder"
+	      Parameters	      "BaseAddress, ChannelIdx, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Encoder\nCounter"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nEncoder"
+	      SrcPort		      1
+	      DstBlock		      "Encoder\nCounter"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Reset"
+	      SrcPort		      1
+	      DstBlock		      "RT-DAC PCI\nEncoder"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nEncoder Car"
+	  Ports			  [1, 1]
+	  Position		  [430, 35, 490, 85]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Channel:|Sample Time (sec):"
+	  MaskStyleString	  "edit,popup(0|1|2|3),edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVariables		  "BaseAddress=@1;ChannelIdx=@2;T0=@3;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|0|T0"
+	  MaskVariableAliases	  ",,"
+	  System {
+	    Name		    "RT-DAC PCI\nEncoder Car"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Reset"
+	      Position		      [20, 65, 40, 85]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nEncoder"
+	      Ports		      [1, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_encoder"
+	      Parameters	      "BaseAddress, ChannelIdx, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Encoder\nCounter"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nEncoder"
+	      SrcPort		      1
+	      DstBlock		      "Encoder\nCounter"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Reset"
+	      SrcPort		      1
+	      DstBlock		      "RT-DAC PCI\nEncoder"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nEncoder Wheel"
+	  Ports			  [1, 1]
+	  Position		  [430, 120, 490, 170]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Channel:|Sample Time (sec):"
+	  MaskStyleString	  "edit,popup(0|1|2|3),edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVariables		  "BaseAddress=@1;ChannelIdx=@2;T0=@3;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|1|T0"
+	  MaskVariableAliases	  ",,"
+	  System {
+	    Name		    "RT-DAC PCI\nEncoder Wheel"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Reset"
+	      Position		      [20, 65, 40, 85]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nEncoder"
+	      Ports		      [1, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_encoder"
+	      Parameters	      "BaseAddress, ChannelIdx, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Encoder\nCounter"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Reset"
+	      SrcPort		      1
+	      DstBlock		      "RT-DAC PCI\nEncoder"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nEncoder"
+	      SrcPort		      1
+	      DstBlock		      "Encoder\nCounter"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nFrequency"
+	  Ports			  [0, 1]
+	  Position		  [50, 375, 110, 425]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Sample Time (sec):"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVariables		  "BaseAddress=@1;T0=@2;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|T0"
+	  MaskVariableAliases	  ","
+	  System {
+	    Name		    "RT-DAC PCI\nFrequency"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nFrequency"
+	      Ports		      [0, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_frequency"
+	      Parameters	      "BaseAddress, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VMax"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nFrequency"
+	      SrcPort		      1
+	      DstBlock		      "VMax"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nMaximum Velocity"
+	  Ports			  [0, 1]
+	  Position		  [50, 260, 110, 310]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Sample Time (sec):"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVariables		  "BaseAddress=@1;T0=@2;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|T0"
+	  MaskVariableAliases	  ","
+	  System {
+	    Name		    "RT-DAC PCI\nMaximum Velocity"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nVMax"
+	      Ports		      [0, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_vmax"
+	      Parameters	      "BaseAddress, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VMax"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nVMax"
+	      SrcPort		      1
+	      DstBlock		      "VMax"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nPWM Brake"
+	  Ports			  [1]
+	  Position		  [150, 140, 210, 190]
+	  BackgroundColor	  "red"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "PWM Module"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "IO Base Address:|Channel: |Channel Mode:|Ch"
+"annel Prescaler:|Set Outputs At Termination|Termination Outputs:|Sample Time "
+"(sec):"
+	  MaskStyleString	  "edit,popup(0|1|2|3),popup(8 Bit|12 Bit),edi"
+"t,checkbox,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on,on"
+	  MaskCallbackString	  "||||||"
+	  MaskEnableString	  "on,on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on,on"
+	  MaskVariables		  "BaseAddress=@1;ChanIdx=@2;ChanMode=@3;ChanP"
+"resc=@4;SetOutputsFlag=@5;SetOutputsValue=@6;T0=@7;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|1|12 Bit|60|on|0|T0"
+	  MaskVariableAliases	  ",,,,,,"
+	  System {
+	    Name		    "RT-DAC PCI\nPWM Brake"
+	    Location		    [364, 271, 636, 415]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "PWM\nWidth"
+	      Position		      [45, 55, 65, 75]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nPWM\n"
+	      Ports		      [1]
+	      Position		      [95, 40, 205, 90]
+	      FunctionName	      "rtdacpci_abs_pwm"
+	      Parameters	      "BaseAddress, ChanIdx, ChanMode, ChanPre"
+"sc, SetOutputsFlag, SetOutputsValue, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Line {
+	      SrcBlock		      "PWM\nWidth"
+	      SrcPort		      1
+	      DstBlock		      "RT-DAC PCI\nPWM\n"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nPWM Drive"
+	  Ports			  [1]
+	  Position		  [150, 50, 210, 100]
+	  BackgroundColor	  "red"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "PWM Module"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "IO Base Address:|Channel: |Channel Mode:|Ch"
+"annel Prescaler:|Set Outputs At Termination|Termination Outputs:|Sample Time "
+"(sec):"
+	  MaskStyleString	  "edit,popup(0|1|2|3),popup(8 Bit|12 Bit),edi"
+"t,checkbox,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on,on"
+	  MaskCallbackString	  "||||||"
+	  MaskEnableString	  "on,on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on,on"
+	  MaskVariables		  "BaseAddress=@1;ChanIdx=@2;ChanMode=@3;ChanP"
+"resc=@4;SetOutputsFlag=@5;SetOutputsValue=@6;T0=@7;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|0|12 Bit|60|on|0|T0"
+	  MaskVariableAliases	  ",,,,,,"
+	  System {
+	    Name		    "RT-DAC PCI\nPWM Drive"
+	    Location		    [364, 272, 637, 415]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "PWM\nWidth"
+	      Position		      [45, 55, 65, 75]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nPWM\n"
+	      Ports		      [1]
+	      Position		      [95, 40, 205, 90]
+	      FunctionName	      "rtdacpci_abs_pwm"
+	      Parameters	      "BaseAddress, ChanIdx, ChanMode, ChanPre"
+"sc, SetOutputsFlag, SetOutputsValue, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Line {
+	      SrcBlock		      "PWM\nWidth"
+	      SrcPort		      1
+	      DstBlock		      "RT-DAC PCI\nPWM\n"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nPulse Width"
+	  Ports			  [0, 1]
+	  Position		  [50, 505, 110, 555]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Sample Time (sec):"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVariables		  "BaseAddress=@1;T0=@2;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|T0"
+	  MaskVariableAliases	  ","
+	  System {
+	    Name		    "RT-DAC PCI\nPulse Width"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nPulse Width"
+	      Ports		      [0, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_pulsewidth"
+	      Parameters	      "BaseAddress, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "PWidth"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nPulse Width"
+	      SrcPort		      1
+	      DstBlock		      "PWidth"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nResistors"
+	  Ports			  [0, 1]
+	  Position		  [440, 450, 500, 500]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Sample Time (sec):"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVariables		  "BaseAddress=@1;T0=@2;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|T0"
+	  MaskVariableAliases	  ","
+	  System {
+	    Name		    "RT-DAC PCI\nResistors"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nResistors"
+	      Ports		      [0, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_resistors"
+	      Parameters	      "BaseAddress, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "resistors"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nResistors"
+	      SrcPort		      1
+	      DstBlock		      "resistors"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RT-DAC PCI\nVelocity"
+	  Ports			  [0, 1]
+	  Position		  [450, 305, 510, 355]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Incremental Encoders"
+	  MaskDescription	  "RT-DAC PCI Device Driver"
+	  MaskHelp		  "Set up each field for your specific hardwar"
+"e configuration."
+	  MaskPromptString	  "Base Address:|Sample Time (sec):"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVariables		  "BaseAddress=@1;T0=@2;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,80,80,11,11],[90,90,20"
+",20,80],[11,80],[80,80],[80,80],[20,14],[80,85,85,80],[45,45,66,66],[45,45,74"
+",74],[20,13,13,20],[15,27,27,15,15],[75,75,26,26,75],[33,48,48,33,33],[75,75,"
+"55,55,75],[55,55,71,71,55],[55,75,75,55,55],[33,41,41,33,33],[50,50,27,27,50]"
+",[48,56,56,48,48],[50,50,27,27,50],[62,70,70,62,62],[50,50,27,27,50])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "BaseAddress|T0"
+	  MaskVariableAliases	  ","
+	  System {
+	    Name		    "RT-DAC PCI\nVelocity"
+	    Location		    [162, 442, 417, 600]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "RT-DAC PCI\nVelocity"
+	      Ports		      [0, 1]
+	      Position		      [75, 48, 170, 102]
+	      FunctionName	      "rtdacpci_abs_velocity"
+	      Parameters	      "BaseAddress, T0"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Velocity"
+	      Position		      [210, 65, 230, 85]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "RT-DAC PCI\nVelocity"
+	      SrcPort		      1
+	      DstBlock		      "Velocity"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Reset\nImpulse"
+	  Position		  [315, 130, 375, 160]
+	  BackgroundColor	  "green"
+	  Expr			  "u<1e-6"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Resistor 1"
+	  Ports			  [1]
+	  Position		  [565, 418, 650, 442]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Resistor 1 High"
+	  Ports			  [1]
+	  Position		  [735, 483, 820, 507]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Resistor 1 Low"
+	  Ports			  [1]
+	  Position		  [735, 438, 820, 462]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Resistor 2"
+	  Ports			  [1]
+	  Position		  [565, 463, 650, 487]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Resistor 2 High"
+	  Ports			  [1]
+	  Position		  [735, 573, 820, 597]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Resistor 2 Low"
+	  Ports			  [1]
+	  Position		  [735, 528, 820, 552]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Scale\nBump"
+	  Position		  [535, 215, 565, 245]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSPositionScale( 3 )"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Scale\nCar"
+	  Position		  [535, 45, 565, 75]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSPositionScale( 1 )"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Scale\nMaximum Velocity"
+	  Position		  [215, 245, 245, 275]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSVelocityScale"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Scale\nVelocity"
+	  Position		  [545, 315, 575, 345]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSVelocityScale"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Scale\nWheel"
+	  Position		  [535, 130, 565, 160]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSPositionScale( 2 )"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Scale Power Supply"
+	  Ports			  [1, 1]
+	  Position		  [190, 347, 245, 373]
+	  BackgroundColor	  "green"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Scale Power Supply"
+	    Location		    [159, 369, 617, 604]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Bit"
+	      Position		      [40, 108, 70, 122]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [135, 130, 165, 160]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      Position		      [135, 70, 285, 100]
+	      ShowName		      off
+	      Expr		      "ABSPowerScale/(u+0.001)"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [315, 67, 345, 163]
+	      ShowName		      off
+	      Threshold		      "0.5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Power"
+	      Position		      [370, 108, 400, 122]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "Power"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Bit"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Fcn"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Switch"
+		DstPort			2
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Scale Temperature"
+	  Position		  [210, 475, 240, 505]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSTemperatureScale"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [765, 155, 785, 175]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Temperature Flag"
+	  Ports			  [1]
+	  Position		  [295, 559, 380, 581]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Temperature [C]"
+	  Ports			  [1]
+	  Position		  [295, 479, 380, 501]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  Position		  [605, 223, 620, 237]
+	  BackgroundColor	  "green"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Theshold Resistors\nScale"
+	  Position		  [600, 505, 630, 535]
+	  BackgroundColor	  "green"
+	  Gain			  "ABSVelocityScale"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Wheel Velocity"
+	  Ports			  [1]
+	  Position		  [725, 378, 810, 402]
+	  BackgroundColor	  "green"
+	  Format		  "short"
+	  Decimation		  "1"
+	  Floating		  off
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Car [m]"
+	  Position		  [605, 53, 635, 67]
+	  BackgroundColor	  "green"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Wheel [m]"
+	  Position		  [605, 138, 635, 152]
+	  BackgroundColor	  "green"
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Car Velocity [RPM]"
+	  Position		  [690, 298, 720, 312]
+	  BackgroundColor	  "green"
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Wheel Velocity [RPM]"
+	  Position		  [690, 343, 720, 357]
+	  BackgroundColor	  "green"
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Slip"
+	  Position		  [920, 143, 950, 157]
+	  BackgroundColor	  "green"
+	  Port			  "5"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Dead Zone1"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Dead Zone"
+	  SrcPort		  1
+	  Points		  [0, 25]
+	  Branch {
+	    DstBlock		    "Fcn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Pos-2-Vel\nCar"
+	  SrcPort		  1
+	  DstBlock		  "Dead Zone"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pos-2-Vel\nWheel"
+	  SrcPort		  1
+	  DstBlock		  "Dead Zone1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "Disp. Slip"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Slip"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  4
+	  DstBlock		  "Resistor 2 High"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  3
+	  DstBlock		  "Resistor 2 Low"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  2
+	  DstBlock		  "Resistor 1 High"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  1
+	  DstBlock		  "Resistor 1 Low"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Theshold Resistors\nScale"
+	  SrcPort		  1
+	  DstBlock		  "Demux5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux4"
+	  SrcPort		  3
+	  DstBlock		  "Theshold Resistors\nScale"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux4"
+	  SrcPort		  2
+	  DstBlock		  "Resistor 2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux4"
+	  SrcPort		  1
+	  DstBlock		  "Resistor 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nResistors"
+	  SrcPort		  1
+	  DstBlock		  "Demux4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  3
+	  DstBlock		  "Temperature Flag"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  2
+	  DstBlock		  "Max Scale Temperature"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Max Scale Temperature"
+	  SrcPort		  1
+	  DstBlock		  "Max Temperature [C]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  3
+	  DstBlock		  "Power Supply Flag"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Min Scale Power Supply"
+	  SrcPort		  1
+	  DstBlock		  "Min Power Supply [V]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  2
+	  DstBlock		  "Min Scale Power Supply"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reset\nImpulse"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "RT-DAC PCI\nEncoder Bump"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -85]
+	    DstBlock		    "RT-DAC PCI\nEncoder Car"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "RT-DAC PCI\nEncoder Wheel"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "Reset\nImpulse"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  1
+	  DstBlock		  "Scale Temperature"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nPulse Width"
+	  SrcPort		  1
+	  DstBlock		  "Demux3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  1
+	  DstBlock		  "Scale Power Supply"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nFrequency"
+	  SrcPort		  1
+	  DstBlock		  "Demux2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Maximum Velocity Flag"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Scale\nMaximum Velocity"
+	  SrcPort		  1
+	  DstBlock		  "Maximum Velocity [RPM]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Scale\nMaximum Velocity"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nMaximum Velocity"
+	  SrcPort		  1
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [0, 40]
+	    DstBlock		    "Wheel Velocity"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Wheel Velocity [RPM]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Car Velocity"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Car Velocity [RPM]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Brake"
+	  SrcPort		  1
+	  DstBlock		  "RT-DAC PCI\nPWM Brake"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Drive"
+	  SrcPort		  1
+	  DstBlock		  "RT-DAC PCI\nPWM Drive"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Scale Temperature"
+	  SrcPort		  1
+	  DstBlock		  "Temperature [C]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Scale Power Supply"
+	  SrcPort		  1
+	  DstBlock		  "Power Supply [V]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Scale\nVelocity"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nVelocity"
+	  SrcPort		  1
+	  DstBlock		  "Scale\nVelocity"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Scale\nBump"
+	  SrcPort		  1
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Scale\nWheel"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Pos-2-Vel\nWheel"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Wheel [m]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Scale\nCar"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Pos-2-Vel\nCar"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Car [m]"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nEncoder Bump"
+	  SrcPort		  1
+	  DstBlock		  "Scale\nBump"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nEncoder Wheel"
+	  SrcPort		  1
+	  DstBlock		  "Scale\nWheel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "RT-DAC PCI\nEncoder Car"
+	  SrcPort		  1
+	  DstBlock		  "Scale\nCar"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [146, 23]
+	  Text			  "ABS Device Driver"
+	  FontSize		  28
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "ABS Plots"
+      Ports		      [6]
+      Position		      [540, 66, 665, 244]
+      ExtModeUploadOption     "log"
+      ExtModeLoggingTrig      on
+      Floating		      off
+      Location		      [329, 65, 1019, 733]
+      Open		      off
+      NumInputPorts	      "6"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+	axes4			"%<SignalLabel>"
+	axes5			"%<SignalLabel>"
+	axes6			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+	axes4			""
+	axes5			""
+	axes6			""
+      }
+      Grid		      "on"
+      TimeRange		      "30"
+      YMin		      "0~0~0~0~-0.05~0"
+      YMax		      "140~140~1750~1750~0.3~1"
+      SaveToWorkspace	      on
+      SaveName		      "ABSHistory"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "6000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Breaking\nDistance"
+      Ports		      [1]
+      Position		      [105, 357, 145, 403]
+      Orientation	      "left"
+      ExtModeUploadOption     "log"
+      Floating		      off
+      Location		      [19, 479, 412, 709]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "30"
+      YMin		      "0"
+      YMax		      "15"
+      SaveToWorkspace	      on
+      SaveName		      "ABSBreakingWay"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "6000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Controller"
+      Ports		      [5, 3]
+      Position		      [225, 279, 360, 401]
+      Orientation	      "left"
+      BackgroundColor	      "red"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "ABS Relay Controller"
+      MaskDescription	      "Parameters of the ABS relay controller"
+      MaskPromptString	      "Velocity Treshold [RPM]:|Switch Point [ON OFF]:"
+"|Control When [ON OFF]:"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "VelTr=@1;SwPoint=@2;CntLevel=@3;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1700|[0.1 0.1]|[0 1]"
+      MaskVariableAliases     ",,"
+      Port {
+	PortNumber		1
+	Name			"Brake"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      Port {
+	PortNumber		2
+	Name			"Accelerate"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      System {
+	Name			"Controller"
+	Location		[146, 113, 804, 599]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Car"
+	  Position		  [90, 163, 120, 177]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Wheel"
+	  Position		  [90, 198, 120, 212]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VCar"
+	  Position		  [90, 233, 120, 247]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VWheel"
+	  Position		  [90, 268, 120, 282]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Slip"
+	  Position		  [90, 313, 120, 327]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ABS Controller"
+	  Ports			  [1, 1, 1]
+	  Position		  [440, 180, 550, 230]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "ABS Controller"
+	    Location		    [289, 112, 706, 230]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Slip"
+	      Position		      [100, 48, 130, 62]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      Ports		      []
+	      Position		      [35, 15, 55, 35]
+	      StatesWhenEnabling      "held"
+	      ShowOutputPort	      off
+	    }
+	    Block {
+	      BlockType		      Relay
+	      Name		      "Relay"
+	      Position		      [220, 40, 250, 70]
+	      OnSwitchValue	      "SwPoint(1)"
+	      OffSwitchValue	      "SwPoint(2)"
+	      OnOutputValue	      "CntLevel(1)"
+	      OffOutputValue	      "CntLevel(2)"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Ctrl Output"
+	      Position		      [340, 48, 370, 62]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Slip"
+	      SrcPort		      1
+	      DstBlock		      "Relay"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Relay"
+	      SrcPort		      1
+	      DstBlock		      "Ctrl Output"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Accelerate"
+	  Ports			  [1, 2, 1]
+	  Position		  [255, 105, 355, 165]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Accelerate"
+	    Location		    [304, 211, 831, 490]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VCar"
+	      Position		      [40, 88, 70, 102]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      Ports		      []
+	      Position		      [45, 15, 65, 35]
+	      StatesWhenEnabling      "held"
+	      ShowOutputPort	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [155, 139, 175, 161]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [315, 189, 335, 211]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant4"
+	      Position		      [315, 159, 335, 181]
+	      ShowName		      off
+	      Value		      "1"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant7"
+	      Position		      [80, 120, 110, 150]
+	      ShowName		      off
+	      Value		      "VelTr"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      Position		      [170, 87, 200, 118]
+	      ShowName		      off
+	      Operator		      ">="
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "S-R\nFlip-Flop1"
+	      Ports		      [2, 2]
+	      Position		      [230, 94, 260, 141]
+	      ShowName		      off
+	      SourceBlock	      "simulink_extras/Flip Flops/S-R\nFlip-Fl"
+"op"
+	      SourceType	      "SRFlipFlop"
+	      initial_condition	      "0"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [375, 159, 410, 211]
+	      Threshold		      "0.5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Drive"
+	      Position		      [430, 178, 460, 192]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "CtrlCalc"
+	      Position		      [430, 98, 460, 112]
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Constant7"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -25]
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "S-R\nFlip-Flop1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VCar"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -20]
+	      DstBlock		      "S-R\nFlip-Flop1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "Drive"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-R\nFlip-Flop1"
+	      SrcPort		      2
+	      Points		      [20, 0; 0, 55]
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "S-R\nFlip-Flop1"
+	      SrcPort		      1
+	      DstBlock		      "CtrlCalc"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant4"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Calculate\nBreaking Distance"
+	  Ports			  [2, 1, 1]
+	  Position		  [445, 289, 545, 336]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Calculate\nBreaking Distance"
+	    Location		    [516, 169, 994, 352]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "InitValue"
+	      Position		      [75, 113, 105, 127]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Reset"
+	      Position		      [135, 93, 165, 107]
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      Ports		      []
+	      Position		      [30, 20, 50, 40]
+	      StatesWhenEnabling      "held"
+	      ShowOutputPort	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [130, 69, 150, 91]
+	      ShowName		      off
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      Ports		      [3, 1]
+	      Position		      [200, 69, 235, 131]
+	      ShowName		      off
+	      ExternalReset	      "rising"
+	      InitialConditionSource  "external"
+	      InitialCondition	      "0"
+	      LimitOutput	      off
+	      UpperSaturationLimit    "inf"
+	      LowerSaturationLimit    "-inf"
+	      ShowSaturationPort      off
+	      ShowStatePort	      off
+	      AbsoluteTolerance	      "auto"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [305, 90, 325, 110]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|-+"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Way"
+	      Position		      [350, 93, 380, 107]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "InitValue"
+	      SrcPort		      1
+	      Points		      [40, 0; 15, 0]
+	      Branch {
+		Points			[0, 25; 150, 0]
+		DstBlock		"Sum"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"Integrator"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Reset"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Way"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [30, 99, 50, 121]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [105, 39, 125, 61]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  Position		  [30, 74, 50, 96]
+	  ShowName		  off
+	  Value			  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  Ports			  [2, 1]
+	  Position		  [235, 62, 265, 93]
+	  ShowName		  off
+	  Operator		  "AND"
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  Ports			  [1, 1]
+	  Position		  [185, 59, 215, 81]
+	  ShowName		  off
+	  Operator		  "NOT"
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory1"
+	  Position		  [150, 60, 165, 80]
+	  ShowName		  off
+	  X0			  "0"
+	  InheritSampleTime	  off
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory2"
+	  Position		  [405, 315, 430, 335]
+	  ShowName		  off
+	  X0			  "0"
+	  InheritSampleTime	  off
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "S-R\nFlip-Flop"
+	  Ports			  [2, 2]
+	  Position		  [80, 74, 110, 121]
+	  ShowName		  off
+	  SourceBlock		  "simulink_extras/Flip Flops/S-R\nFlip-Flop"
+	  SourceType		  "SRFlipFlop"
+	  initial_condition	  "0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Stop Experiment"
+	  Ports			  [1, 0, 1]
+	  Position		  [450, 398, 550, 442]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Stop Experiment"
+	    Location		    [442, 537, 789, 694]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VCar"
+	      Position		      [30, 88, 60, 102]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      Ports		      []
+	      Position		      [60, 15, 80, 35]
+	      StatesWhenEnabling      "held"
+	      ShowOutputPort	      off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn1"
+	      Position		      [95, 80, 155, 110]
+	      ShowName		      off
+	      Expr		      "u < 0.01"
+	    }
+	    Block {
+	      BlockType		      Stop
+	      Name		      "Stop Simulation"
+	      Position		      [255, 77, 290, 113]
+	      BackgroundColor	      "red"
+	    }
+	    Block {
+	      BlockType		      TransportDelay
+	      Name		      "Transport\nDelay"
+	      Position		      [185, 80, 215, 110]
+	      ShowName		      off
+	      DelayTime		      "0.5"
+	      InitialInput	      "0"
+	      BufferSize	      "1024"
+	      PadeOrder		      "0"
+	    }
+	    Line {
+	      SrcBlock		      "Fcn1"
+	      SrcPort		      1
+	      DstBlock		      "Transport\nDelay"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Transport\nDelay"
+	      SrcPort		      1
+	      DstBlock		      "Stop Simulation"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VCar"
+	      SrcPort		      1
+	      DstBlock		      "Fcn1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  Position		  [135, 100, 155, 120]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  Position		  [140, 195, 160, 215]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  Position		  [140, 265, 160, 285]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Ctrl Output"
+	  Position		  [590, 198, 620, 212]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Drive"
+	  Position		  [590, 113, 620, 127]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Breaking Distance"
+	  Position		  [590, 308, 620, 322]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-R\nFlip-Flop"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Accelerate"
+	  DstPort		  enable
+	}
+	Line {
+	  SrcBlock		  "Accelerate"
+	  SrcPort		  2
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [110, 0]
+	    DstBlock		    "ABS Controller"
+	    DstPort		    enable
+	  }
+	  Branch {
+	    Points		    [0, 115]
+	    Branch {
+	      Points		      [110, 0]
+	      DstBlock		      "Calculate\nBreaking Distance"
+	      DstPort		      enable
+	    }
+	    Branch {
+	      Points		      [0, 60]
+	      Branch {
+		DstBlock		"Memory2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 58]
+		DstBlock		"Stop Experiment"
+		DstPort			enable
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "S-R\nFlip-Flop"
+	  SrcPort		  2
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "S-R\nFlip-Flop"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Accelerate"
+	  SrcPort		  1
+	  DstBlock		  "Drive"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ABS Controller"
+	  SrcPort		  1
+	  DstBlock		  "Ctrl Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Calculate\nBreaking Distance"
+	  SrcPort		  1
+	  DstBlock		  "Breaking Distance"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VCar"
+	  SrcPort		  1
+	  Points		  [95, 0]
+	  Branch {
+	    Points		    [0, -105]
+	    DstBlock		    "Accelerate"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 180]
+	    DstBlock		    "Stop Experiment"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Car"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, 130]
+	  DstBlock		  "Calculate\nBreaking Distance"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Memory2"
+	  SrcPort		  1
+	  DstBlock		  "Calculate\nBreaking Distance"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Memory1"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Slip"
+	  SrcPort		  1
+	  Points		  [180, 0; 0, -115]
+	  DstBlock		  "ABS Controller"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [0, 20]
+	  DstBlock		  "Memory1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "S-R\nFlip-Flop"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Wheel"
+	  SrcPort		  1
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VWheel"
+	  SrcPort		  1
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Name		      "Accelerate"
+      Labels		      [0, 0]
+      SrcBlock		      "Controller"
+      SrcPort		      2
+      Points		      [-55, 0; 0, -240]
+      DstBlock		      "ABS"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Brake"
+      Labels		      [0, 0]
+      SrcBlock		      "Controller"
+      SrcPort		      1
+      Points		      [-40, 0; 0, -50]
+      Branch {
+	Points			[0, -70]
+	DstBlock		"ABS"
+	DstPort			2
+      }
+      Branch {
+	Points			[310, 0; 0, -20]
+	DstBlock		"ABS Plots"
+	DstPort			6
+      }
+    }
+    Line {
+      Name		      "Car"
+      Labels		      [0, 0]
+      SrcBlock		      "ABS"
+      SrcPort		      1
+      Points		      [0, 0; 30, 0]
+      Branch {
+	Points			[0, 210]
+	DstBlock		"Controller"
+	DstPort			1
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"ABS Plots"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Wheel"
+      Labels		      [0, 0]
+      SrcBlock		      "ABS"
+      SrcPort		      2
+      Points		      [0, 0; 40, 0]
+      Branch {
+	Points			[0, 205]
+	DstBlock		"Controller"
+	DstPort			2
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"ABS Plots"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "VCar"
+      Labels		      [0, 0]
+      SrcBlock		      "ABS"
+      SrcPort		      3
+      Points		      [0, 0; 50, 0]
+      Branch {
+	Points			[0, 200]
+	DstBlock		"Controller"
+	DstPort			3
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"ABS Plots"
+	DstPort			3
+      }
+    }
+    Line {
+      Name		      "VWheel"
+      Labels		      [0, 0]
+      SrcBlock		      "ABS"
+      SrcPort		      4
+      Points		      [0, 0; 60, 0]
+      Branch {
+	Points			[0, 195]
+	DstBlock		"Controller"
+	DstPort			4
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"ABS Plots"
+	DstPort			4
+      }
+    }
+    Line {
+      Name		      "Slip"
+      Labels		      [0, 0]
+      SrcBlock		      "ABS"
+      SrcPort		      5
+      Points		      [0, 0; 70, 0]
+      Branch {
+	Points			[0, 190]
+	DstBlock		"Controller"
+	DstPort			5
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"ABS Plots"
+	DstPort			5
+      }
+    }
+    Line {
+      SrcBlock		      "Controller"
+      SrcPort		      3
+      DstBlock		      "Breaking\nDistance"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [368, 33]
+      Text		      "ABS Relay Controller"
+      FontSize		      18
+      FontWeight	      "bold"
+    }
+  }
+}
